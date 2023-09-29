@@ -29,7 +29,7 @@
                 });
 
                 ReactDOM.render(
-                    <Table elements={events} name="EventHub" />,
+                    React.createElement(Table, { elements: events, name: "EventHub" }),
                     document.getElementById("root")
                 );
             }); 
