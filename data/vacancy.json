@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "Строитель",
+    "salary": 400,
+    "organization": "строй",
+    "img": "conference.jpg"
+  }
+]

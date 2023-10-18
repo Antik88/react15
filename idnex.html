@@ -19,17 +19,17 @@
     <script src="./components/Table/Table.js" type="text/babel"></script>
 
     <script type="text/babel">
-        const events = [];
+        const vacancy = [];
 
-        fetch('./data/events.json')
+        fetch('./data/vacancy.json')
             .then(response => response.json())
             .then(data => {
                 data.forEach(item => {
-                    events.push(item);
+                    vacancy.push(item);
                 });
 
                 ReactDOM.render(
-                    React.createElement(Table, { elements: events, name: "EventHub" }),
+                    React.createElement(Table, { vacancys: vacancy, name: "Vacancy" }),
                     document.getElementById("root")
                 );
             }); 
